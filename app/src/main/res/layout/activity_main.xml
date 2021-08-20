@@ -153,11 +153,12 @@
             android:textColor="#80FFFFFF"
             android:visibility="visible"
             app:backgroundTint="#00EAE5E5"
+            app:iconTint="#2DFFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
-            app:strokeColor="#86FFFFFF"
-            app:strokeWidth="1dp" />
+            app:strokeColor="#52FFFFFF"
+            app:strokeWidth="2dp" />
 
         <EditText
             android:id="@+id/editTextTextPersonName2"
