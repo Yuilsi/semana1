@@ -34,7 +34,7 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="415dp"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="50dp"
             android:text="Don't have an account? Sign up"
@@ -47,7 +47,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView4"
             app:layout_constraintVertical_bias="1.0"
-            app:strokeColor="#F8F9FF"
+            app:strokeColor="#6FF8F9FF"
             app:strokeWidth="1dp" />
 
         <ImageView
@@ -75,7 +75,7 @@
             android:padding="10dp"
             android:text="Password"
             android:textColor="#A8FFFFFF"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
@@ -86,14 +86,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="150dp"
             android:layout_marginLeft="150dp"
-            android:layout_marginTop="68dp"
+            android:layout_marginTop="76dp"
             android:layout_marginEnd="40dp"
             android:layout_marginRight="40dp"
             android:text="Log in with facebook"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
-            android:textSize="14sp"
+            android:textSize="13sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -114,6 +114,7 @@
             android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold"
+            android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/textView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -155,7 +156,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
-            app:strokeColor="@color/white"
+            app:strokeColor="#86FFFFFF"
             app:strokeWidth="1dp" />
 
         <EditText
@@ -173,7 +174,7 @@
             android:padding="10dp"
             android:text="Username"
             android:textColor="#A8FFFFFF"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
