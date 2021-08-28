@@ -10,55 +10,15 @@
     tools:layout_editor_absoluteY="-9dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="30dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="56dp"
-            android:layout_height="20dp"
-            android:layout_marginBottom="112dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.29"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/facebook" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="50dp"
-            android:text="Don't have an account? Sign up"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="12sp"
-            app:backgroundTint="#00FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4"
-            app:layout_constraintVertical_bias="1.0"
-            app:strokeColor="#6FF8F9FF"
-            app:strokeWidth="1dp" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="205dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="200dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/instagram" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="visible">
 
         <EditText
             android:id="@+id/editTextTextPersonName3"
@@ -66,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="37dp"
             android:layout_marginLeft="37dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="18dp"
             android:layout_marginEnd="37dp"
             android:layout_marginRight="37dp"
             android:background="@drawable/textfield_color"
@@ -77,88 +37,94 @@
             android:textColor="#A8FFFFFF"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
-        <TextView
-            android:id="@+id/textView"
+        <Button
+            android:id="@+id/button2"
+            style="Theme.AppCompat.DayNight.NoActionBar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="150dp"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="76dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginRight="40dp"
+            android:background="#239C27B0"
+
+            android:text="Don't have an account? Sign up"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FBF5F5"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:strokeWidth="1dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="205dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="128dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/instagram" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:layout_marginBottom="48dp"
             android:text="Log in with facebook"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="13sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="1dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginTop="21dp"
-            android:layout_marginEnd="45dp"
-            android:layout_marginRight="45dp"
-            android:layout_marginBottom="89dp"
-            android:text="Get help signing in"
-            android:textColor="@color/white"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/textView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="21dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginRight="1dp"
-            android:layout_marginBottom="89dp"
-            android:text="Forgot your login details?"
-            android:textColor="@color/white"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView4"
-            app:layout_constraintEnd_toStartOf="@+id/textView4"
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="56dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button"
-            app:layout_constraintVertical_bias="0.0" />
+            app:srcCompat="@drawable/facebook" />
 
         <Button
             android:id="@+id/button"
+
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="37dp"
             android:layout_marginLeft="37dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="37dp"
             android:layout_marginRight="37dp"
             android:text="Login"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#80FFFFFF"
+
+            android:textColor="#6BFFFFFF"
             android:visibility="visible"
-            app:backgroundTint="#00EAE5E5"
-            app:iconTint="#2DFFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
-            app:strokeColor="#52FFFFFF"
-            app:strokeWidth="2dp" />
+            app:strokeColor="#6AFFFFFF"
+
+            app:strokeWidth="1dp" />
 
         <EditText
             android:id="@+id/editTextTextPersonName2"
@@ -166,7 +132,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="37dp"
             android:layout_marginLeft="37dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="37dp"
             android:layout_marginRight="37dp"
             android:background="@drawable/textfield_color"
@@ -177,8 +143,40 @@
             android:textColor="#A8FFFFFF"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="190dp"
+            android:layout_marginRight="190dp"
+            android:text="Get help signing in"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="8dp"
+            android:text="Forgot your login details?"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
